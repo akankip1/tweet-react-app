@@ -1,0 +1,135 @@
+.post{
+  margin: 1rem 0;
+  padding: 1rem;      
+  
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(0, 35, 62);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  animation: animate-in 1s ease-out forwards;
+  width: fit-content;
+  min-width: 12rem;
+  min-height: 6rem;
+  }
+  .author{
+    font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  color: rgb(206, 170, 41);
+  }
+.comment{
+  white-space: pre-wrap;
+  font-size: 1.25rem;
+  margin: 0.25rem 0 0 0;
+  
+  font-style: italic;
+}  
+.ulist{
+  display: grid;
+  list-style: none;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 1rem;
+  grid-template-columns: repeat(3,30%);
+  justify-content: center;
+}
+
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form {
+  background-color: rgb(10, 0, 44);
+  padding: 1rem;  
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-style: none;
+  width:20rem;
+  
+  
+}
+
+.form label {
+  display: block;  
+  color: #e0d56c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form input{
+  
+  
+  color: #28262c;
+ 
+} 
+.form textarea {
+  display: block;
+  width: 90%;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #7e7e7e;
+  /* color: #28262c; */
+  max-width: 98%;
+}
+.form input {
+  display: block;
+  width: 90%;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #7e7e7e;
+  /* color: #28262c; */
+  
+}
+.form input,.form textarea:hover{
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(10, 0, 44);
+  color: #e0d56c;
+}
+
+.actions button:hover {
+  background-color: transparent;
+}
+
+.actions button[type='button'] {
+  background-color: transparent;
+}
+
+.actions button[type='button']:hover {
+  color: #d1bee6;
+}
+.actions button[type='submit']:hover {
+  color: #d1bee6;
+}
+.noposts{
+  text-align: center;
+}
