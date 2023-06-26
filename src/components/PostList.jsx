@@ -6,6 +6,7 @@ import './Post.css';
 export default function PostList(props){   
     const [posts,SetPosts]=useState([])
     const [isFetching, setIsFetching]=useState(false)
+    //UNCOMMENT BELOW FOR BACKEND CODE
     // useEffect(()=>{
     //     async function fetchPosts(){
     //         setIsFetching(true)
