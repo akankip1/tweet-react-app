@@ -1,9 +1,7 @@
 import { useState,useEffect } from 'react';
-import Modal from './Modal';
-import NewPost from './NewPost';
 import Post from './Post'
 import './Post.css';
-export default function PostList(props){   
+export default function PostList(){   
     const [posts,SetPosts]=useState([])
     const [isFetching, setIsFetching]=useState(false)
     //UNCOMMENT BELOW FOR BACKEND CODE
@@ -32,13 +30,13 @@ export default function PostList(props){
     return(
     <>
    
-    {props.ModalVisible ? <Modal hideModal={props.hideModal}>
+    {/* {props.ModalVisible ? <Modal hideModal={props.hideModal}>
         <NewPost        
         onCancel={props.hideModal}
         onAdd={addPost}
         />
         </Modal> :null
-        }
+        } */}
         
         
         {!isFetching && posts.length>0 && <ul className='ulist'>            

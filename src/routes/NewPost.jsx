@@ -1,4 +1,5 @@
-import './Post.css'
+import Modal from '../components/Modal';
+import '../components/Post.css'
 import { useState } from "react";
 export default function NewPost(props){
     const [bodytext,setBodyText]=useState('');
@@ -22,6 +23,7 @@ export default function NewPost(props){
         props.onCancel();
     }
     return(
+        <Modal>
         <form className="form" onSubmit={onSubmit}>
            <p>
             <label htmlFor="body">Comment</label>
@@ -36,5 +38,6 @@ export default function NewPost(props){
                 <button type='button'onClick={props.onCancel}>Discard</button>
             </p> 
         </form>
+        </Modal>
     )
 }

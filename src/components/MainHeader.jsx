@@ -1,6 +1,6 @@
 import './MainHeader.css'
 import {MdPostAdd, MdMessage} from 'react-icons/md'
-
+import {Link} from 'react-router-dom'
 export default function MainHeader(props){
     return(
     <>
@@ -11,10 +11,10 @@ export default function MainHeader(props){
         Comment Board
       </h1>
       <p>
-        <button className="button" onClick={props.showModal}>
+        <Link to='/new-post' className="button">
           <MdPostAdd size={18} />
           New Post
-        </button>
+        </Link>
       </p>
     </header>  
     </>
