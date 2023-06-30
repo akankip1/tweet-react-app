@@ -57,6 +57,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-style: none;
   width:20rem;
+  text-decoration: none;
   
   
 }
@@ -103,10 +104,12 @@
 .actions {
   display: flex;
   justify-content: flex-end;
+  text-align: center;
   gap: 0.5rem;
+  text-decoration: none;
 }
 
-.actions button {
+.actions button,.link button {
   cursor: pointer;
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -114,22 +117,29 @@
   border-radius: 4px;
   background-color: rgb(10, 0, 44);
   color: #e0d56c;
+  text-decoration: none;
 }
 
+.noposts{
+  text-align: center;
+  text-decoration: none;
+}
 .actions button:hover {
   background-color: transparent;
+  text-decoration: none;
 }
 
 .actions button[type='button'] {
   background-color: transparent;
+  
+  text-decoration: none;
 }
 
 .actions button[type='button']:hover {
   color: #d1bee6;
+  text-decoration: none;
 }
 .actions button[type='submit']:hover {
   color: #d1bee6;
-}
-.noposts{
-  text-align: center;
+  text-decoration: none;
 }
