@@ -24,7 +24,7 @@ function Posts() {
 }
 
 export default Posts
-
+//Can Comment the following function to not have loading functionality see also main.jsx
 export async function loader(){
   const response= await fetch("http://localhost:8080/posts");
   const resData= await response.json();

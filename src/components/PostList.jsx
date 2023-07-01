@@ -3,18 +3,6 @@ import Post from './Post'
 import './Post.css';
 export default function PostList(){ 
     const posts=useLoaderData();    
-    function addPost(postData){
-        fetch("http://localhost:8080/posts",{
-            method:"POST",
-            body: JSON.stringify(postData),
-            headers:{
-                'Content-Type':'application/json'
-
-            }
-        });
-        SetPosts((prev)=>[postData,...prev])
-
-    }
     return(
     <>
    
