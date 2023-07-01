@@ -8,7 +8,7 @@ export default function MainHeader(props){
     <header className="header">
       <h1 className="logo">
         <MdMessage />
-        Comment Board
+        Have Your Say
       </h1>
       <p>
         <Link to='/new-post' className="button">
