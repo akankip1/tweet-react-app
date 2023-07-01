@@ -1,1 +1,4 @@
-# Twitter style react app to add comments without any routing functionality
+# Twitter style react app to add comments
+to run backend: npm start
+
+to run frontend: npm run dev
